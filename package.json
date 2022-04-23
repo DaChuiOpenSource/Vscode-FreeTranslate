@@ -1,6 +1,6 @@
 {
-  "name": "Vscode-FreeTranslate",
-  "displayName": "Vscode-FreeTranslate",
+  "name": "FreeTranslate",
+  "displayName": "FreeTranslate",
   "icon": "resources/icon.png",
   "description": "A translate extension for vscode that is easy to use. The biggest highlight: Words can be translated, Sentences can be translated.",
   "version": "0.1.0",
@@ -13,7 +13,7 @@
     "vscode": "^1.66.0"
   },
   "categories": [
-    "Translate","Free"
+    "Other"
   ],
   "activationEvents": [
     "onCommand:Vscode-FreeTranslate.translate"
