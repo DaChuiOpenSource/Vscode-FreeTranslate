@@ -3,7 +3,7 @@
   "displayName": "FreeTranslate",
   "icon": "resources/icon.png",
   "description": "A translate extension for vscode that is easy to use. The biggest highlight: Words can be translated, Sentences can be translated.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "DaChuiOpenSource",
   "repository": {
     "type": "git",
@@ -180,7 +180,8 @@
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
     "test": "node ./out/test/runTest.js",
-    "pack": "vsce package"
+    "pack": "vsce package",
+    "publish": "vsce publish"
   },
   "devDependencies": {
     "@types/glob": "^7.2.0",

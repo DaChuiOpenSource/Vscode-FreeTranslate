@@ -25,6 +25,9 @@ A translate extension for vscode that is easy to use. The biggest highlight: Wor
 3. Select the content that you want to translate
 4. Right-click and select `FreeTranslate Translate`
 5. Then, The translation result will be in the output panel. The panel opens automatically.
+6. Can change translation language by `TranslateLang` item in the statusbar.
+
+> The `TranslateLang` statusbar item display after first translate occur.
 
 ## Settings
 
