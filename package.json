@@ -1,0 +1,202 @@
+{
+  "name": "Vscode-FreeTranslate",
+  "displayName": "Vscode-FreeTranslate",
+  "icon": "resources/icon.png",
+  "description": "A translate extension for vscode that is easy to use. The biggest highlight: Words can be translated, Sentences can be translated.",
+  "version": "0.1.0",
+  "publisher": "DaChuiOpenSource",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DaChuiOpenSource/Vscode-FreeTranslate.git"
+  },
+  "engines": {
+    "vscode": "^1.66.0"
+  },
+  "categories": [
+    "Translate","Free"
+  ],
+  "activationEvents": [
+    "onCommand:Vscode-FreeTranslate.translate"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "keybindings": [
+      {
+        "command": "Vscode-FreeTranslate.translate",
+        "key": "ctrl+shift+t",
+        "mac": "cmd+shift+t",
+        "when": "editorHasSelection"
+      }
+    ],
+    "commands": [
+      {
+        "command": "Vscode-FreeTranslate.translate",
+        "title": "FreeTranslate Translate"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "when": "editorHasSelection",
+          "command": "Vscode-FreeTranslate.translate",
+          "group": "1_modification"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "Vscode-FreeTranslate.translate",
+          "when": "editorHasSelection"
+        }
+      ]
+    },
+    "configuration": [
+      {
+        "title": "Vscode-FreeTranslate",
+        "properties": {
+          "translate.default.lang": {
+            "type": "string",
+            "default": "ChineseSimplified",
+            "enum": [
+              "ChineseSimplified",
+              "Afrikaans",
+              "Albanian",
+              "Amharic",
+              "Arabic",
+              "Armenian",
+              "Assamese",
+              "Azerbaijani",
+              "Bangla",
+              "Bashkir",
+              "Basque",
+              "Bosnian",
+              "Bulgarian",
+              "Cantonese(Traditional)",
+              "Catalan",
+              "Chinese(Literary)",
+              "ChineseTraditional",
+              "Croatian",
+              "Czech",
+              "Danish",
+              "Dari",
+              "Divehi",
+              "Dutch",
+              "English",
+              "Estonian",
+              "Fijian",
+              "Filipino",
+              "Finnish",
+              "French",
+              "French(Canada)",
+              "Galician",
+              "Georgian",
+              "German",
+              "Greek",
+              "Gujarati",
+              "HaitianCreole",
+              "Hebrew",
+              "Hindi",
+              "HmongDaw",
+              "Hungarian",
+              "Icelandic",
+              "Indonesian",
+              "Inuinnaqtun",
+              "Inuktitut",
+              "Inuktitut(Latin)",
+              "Irish",
+              "Italian",
+              "Japanese",
+              "Kannada",
+              "Kazakh",
+              "Khmer",
+              "Klingon(Latin)",
+              "Korean",
+              "Kurdish(Central)",
+              "Kurdish(Northern)",
+              "Kyrgyz",
+              "Lao",
+              "Latvian",
+              "Lithuanian",
+              "Macedonian",
+              "Malagasy",
+              "Malay",
+              "Malayalam",
+              "Maltese",
+              "Māori",
+              "Marathi",
+              "Mongolian(Cyrillic)",
+              "Mongolian(Traditional)",
+              "Myanmar(Burmese)",
+              "Nepali",
+              "Norwegian",
+              "Odia",
+              "Pashto",
+              "Persian",
+              "Polish",
+              "Portuguese(Brazil)",
+              "Portuguese(Portugal)",
+              "Punjabi",
+              "QuerétaroOtomi",
+              "Romanian",
+              "Russian",
+              "Samoan",
+              "Serbian(Cyrillic)",
+              "Serbian(Latin)",
+              "Slovak",
+              "Slovenian",
+              "Somali",
+              "Spanish",
+              "Swahili",
+              "Swedish",
+              "Tahitian",
+              "Tamil",
+              "Tatar",
+              "Telugu",
+              "Thai",
+              "Tibetan",
+              "Tigrinya",
+              "Tongan",
+              "Turkish",
+              "Turkmen",
+              "Ukrainian",
+              "UpperSorbian",
+              "Urdu",
+              "Uyghur",
+              "Uzbek(Latin)",
+              "Vietnamese",
+              "Welsh",
+              "YucatecMaya",
+              "Zulu"
+            ],
+            "enumDescriptions": []
+          }
+        }
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "pack": "vsce package"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.1.0",
+    "@types/node": "14.x",
+    "@types/vscode": "^1.66.0",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "@vscode/test-electron": "^2.1.3",
+    "eslint": "^8.11.0",
+    "glob": "^7.2.0",
+    "mocha": "^9.2.2",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "bing-translate-api": "^2.6.0",
+    "franc": "^5.0.0"
+  }
+}
