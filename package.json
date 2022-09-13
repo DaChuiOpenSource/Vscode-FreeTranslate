@@ -3,7 +3,7 @@
   "displayName": "FreeTranslate",
   "icon": "resources/icon.png",
   "description": "A translate extension for vscode that is easy to use. The biggest highlight: Words can be translated, Sentences can be translated.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "DaChuiOpenSource",
   "repository": {
     "type": "git",

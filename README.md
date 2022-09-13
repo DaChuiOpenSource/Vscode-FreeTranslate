@@ -1,7 +1,7 @@
 # FreeTranslate for [Visual Studio Code](http://code.visualstudio.com)
 
 A translate extension for vscode that is easy to use. The biggest highlight: Words can be translated, Sentences can be translated, Language can be set. Supports automatic detection of different national languages.
-![FreeTranslate](https://jofenxue.gitee.io/jofendrawingbed/opensource/FreeTranslate/FreeTranslate.gif)
+![FreeTranslate](https://dachuiopensource.gitee.io/jofendrawingbed/opensource/FreeTranslate/FreeTranslate.gif)
 ## Features
 - Free translate
 - Single word can
