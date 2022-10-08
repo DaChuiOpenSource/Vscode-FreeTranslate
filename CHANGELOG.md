@@ -1,6 +1,10 @@
 # Change Log
 
 All notable changes to the "Vscode-FreeTranslate" extension will be documented in this file.
+## 0.1.3
+
+- Add keywords
+
 ## 0.1.2
 
 - Change drawingbed
